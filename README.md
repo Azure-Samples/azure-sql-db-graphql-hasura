@@ -1,57 +1,31 @@
-# Project Name
+# Another Todo App
 
-(short, 1-3 sentenced, description of the project)
+This application is setup to provide an example of using GraphQL with Vue.js. It is used as reference material to work with the Azure Deployment in the [Terrazura Repository](https://github.com/Adron/terrazura).
 
 ## Features
 
 This project framework provides the following features:
 
-* Feature 1
-* Feature 2
-* ...
+* Vue.js v3 Todo Application
+  * GraphQL Client code to the GraphQL API
+* [The Hasura GraphQL API Deployment to Azure & SQL Server](https://github.com/Adron/terrazura)
 
 ## Getting Started
 
-### Prerequisites
+Deployment
 
-(ideally very short, if any)
+For this app, deploy the code and run with `yarn run serve`, then point the various GraphQL calls (currently pointed at localhost:8080/v2/graphql) where the GraphQL API end point is deployed to.
 
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
+For the Hasura GraphQL Server check out the [Terrazura Repository](https://github.com/Adron/terrazura).
 
 ### Quickstart
 (Add steps to get up and running quickly)
 
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
-
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
+- yarn install
+- yarn run serve
 
 ## Resources
 
-(Any additional resources or related projects)
+To build out the Hasura API back end in Azure to run this app against, check out the Terrazura repo located here.
 
-- Link to supporting information
-- Link to similar sample
-- ...
+- 
