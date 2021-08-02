@@ -1,5 +1,7 @@
+const api_uri = "http://terrazuradatalayer.westus2.azurecontainer.io:8080/v1/graphql"
+
 export async function getTodos() {
-  const req = await fetch("http://localhost:8080/v1/graphql", {
+  const req = await fetch(api_uri, {
     method: "POST",
     body: JSON.stringify({
       query: `
@@ -18,7 +20,7 @@ export async function getTodos() {
 }
 
 export async function createTodo(description) {
-  const req = await fetch("http://localhost:8080/v1/graphql", {
+  const req = await fetch(api_uri, {
     method: "POST",
     body: JSON.stringify({
       query: `
@@ -42,7 +44,7 @@ export async function createTodo(description) {
 }
 
 export async function deleteTodoById(id) {
-  const req = await fetch("http://localhost:8080/v1/graphql", {
+  const req = await fetch(api_uri, {
     method: "POST",
     body: JSON.stringify({
       query: `
@@ -62,7 +64,7 @@ export async function deleteTodoById(id) {
 }
 
 export async function updateTodo(todo) {
-  const req = await fetch("http://localhost:8080/v1/graphql", {
+  const req = await fetch(api_uri, {
     method: "POST",
     body: JSON.stringify({
       query: `

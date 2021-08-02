@@ -1,31 +1,35 @@
-# Another Todo App
+# An Azure & Hasura Todo App
 
-This application is setup to provide an example of using GraphQL with Vue.js. It is used as reference material to work with the Azure Deployment in the [Terrazura Repository](https://github.com/Adron/terrazura).
+This application is setup to provide an example of using GraphQL with Vue.js, with Hasura providing GraphQL API Services via the Azure Cloud.
+
+**NOTE** For more detail instructions, check out the blog entry that details this repository and the steps to get everything running.
 
 ## Features
 
 This project framework provides the following features:
 
-* Vue.js v3 Todo Application
+* Vue.js v3 Todo Application (in the root of this repo)
   * GraphQL Client code to the GraphQL API
 * [The Hasura GraphQL API Deployment to Azure & SQL Server](https://github.com/Adron/terrazura)
+* Terraform for the infrastructure in Azure
+
+## Prerequisites
+
+The following are prerequisites to run the back end, initial deploy of infrastructure, and develop the application locally.
+
+1. An Azure Account with the appropriate permissions to deploy applications, containers, and databases as needed by this application.
+2. Azure CLI need to be installed and logged in for use.
+3. Terraform, the CLI, needs to be installed locally with the appropriate environment variables set. See [env-var-notes](env-var-notes.md) for the short list of variables needed.
 
 ## Getting Started
 
-Deployment
+For this app, deploy the code and run with `yarn run dev`, then point the various GraphQL calls (currently pointed at localhost:8080/v2/graphql) where the GraphQL API end point is deployed to. This GraphQL end point will be listed after the execution of the Terraform script as the `hasura_uri_path` variable.
 
-For this app, deploy the code and run with `yarn run serve`, then point the various GraphQL calls (currently pointed at localhost:8080/v2/graphql) where the GraphQL API end point is deployed to.
+Even though you won't need it for this example, the output variable `sqlserver_dsn` variable shows the full DSN connection string to the SQL Server deployed in Azure.
 
-For the Hasura GraphQL Server check out the [Terrazura Repository](https://github.com/Adron/terrazura).
+### Todo App Quickstart
 
-### Quickstart
-(Add steps to get up and running quickly)
+Change out the path of the URI paths to the GraphQL end point to reflect where your deployed API is located at. Then...
 
 - yarn install
-- yarn run serve
-
-## Resources
-
-To build out the Hasura API back end in Azure to run this app against, check out the Terrazura repo located here.
-
-- 
+- yarn run dev
