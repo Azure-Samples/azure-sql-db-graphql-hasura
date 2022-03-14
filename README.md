@@ -10,7 +10,7 @@ This project framework provides the following features:
 
 * Vue.js v3 Todo Application (in the root of this repo)
   * GraphQL Client code to the GraphQL API
-* [The Hasura GraphQL API Deployment to Azure & SQL Server](https://github.com/Adron/terrazura)
+* [The Hasura GraphQL API Deployment to Azure & Azure SQL](https://github.com/Adron/terrazura)
 * Terraform for the infrastructure in Azure
 
 ## Prerequisites
@@ -25,7 +25,7 @@ The following are prerequisites to run the back end, initial deploy of infrastru
 
 For this app, deploy the code and run with `yarn run dev`, then point the various GraphQL calls (currently pointed at localhost:8080/v2/graphql) where the GraphQL API end point is deployed to. This GraphQL end point will be listed after the execution of the Terraform script as the `hasura_uri_path` variable.
 
-Even though you won't need it for this example, the output variable `sqlserver_dsn` variable shows the full DSN connection string to the SQL Server deployed in Azure.
+Even though you won't need it for this example, the output variable `sqlserver_dsn` variable shows the full DSN connection string to the Azure SQL deployed in Azure.
 
 ### Todo App Quickstart
 
