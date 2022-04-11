@@ -10,7 +10,7 @@ This project framework provides the following features:
 
 * Vue.js v3 Todo Application (in the root of this repo)
   * GraphQL Client code to the GraphQL API
-* [The Hasura GraphQL API Deployment to Azure & Azure SQL](https://github.com/Adron/terrazura)
+* [The Hasura GraphQL API Deployment to Azure & Azure SQL](https://github.com/hasura/terrazura)
 * Terraform for the infrastructure in Azure
 
 ## Prerequisites
