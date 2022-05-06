@@ -23,7 +23,10 @@ Taxonomies for products and languages: https://review.docs.microsoft.com/new-hop
 
 This application is setup to provide an example of using GraphQL with Vue.js, with Hasura providing GraphQL API Services via the Azure Cloud.
 
-**NOTE** For more detail instructions, check out the blog entry that details this repository and the steps to get everything running.
+**NOTE** For more detail instructions, check out the blog entry that details this repository and the steps to get everything running:
+
+- [Build GraphQL apps with Hasura and Azure SQL Database](https://devblogs.microsoft.com/azure-sql/build-graphql-apps-with-hasura-and-azure-sql-database/)
+- [Instant Realtime GraphQL on Azure SQL with Hasura](https://www.youtube.com/watch?v=7oUmJDrbkOI)
 
 ## Features
 
