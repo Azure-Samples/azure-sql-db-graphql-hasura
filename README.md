@@ -1,3 +1,24 @@
+---
+page_type: sample
+languages:
+  - sql
+products:
+  - azure
+  - vs-code
+  - azure-sql-database
+  - azure-web-apps
+description: 'Full Stack Todo Sample app, with GraphQL support, using Hasura, Azure Web Apps, Vue.Js and Azure SQL'
+urlFragment: 'azure-sql-db-rest-graphql-directus'
+---
+
+<!--
+Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
+
+Guidance on onboarding samples to docs.microsoft.com/samples: https://review.docs.microsoft.com/help/onboard/admin/samples/process/onboarding?branch=master
+
+Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
+-->
+
 # An Azure & Hasura Todo App
 
 This application is setup to provide an example of using GraphQL with Vue.js, with Hasura providing GraphQL API Services via the Azure Cloud.
