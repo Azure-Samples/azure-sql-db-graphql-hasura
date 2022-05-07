@@ -8,7 +8,6 @@ products:
   - azure-sql-database
   - azure-web-apps
 description: 'Full Stack Todo Sample app, with GraphQL support, using Hasura, Azure Web Apps, Vue.Js and Azure SQL'
-urlFragment: 'azure-sql-db-rest-graphql-directus'
 ---
 
 <!--
