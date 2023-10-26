@@ -6,7 +6,7 @@ products:
   - azure
   - vs-code
   - azure-sql-database
-  - azure-web-apps
+  - azure-app-service
 description: 'Full Stack Todo Sample app, with GraphQL support, using Hasura, Azure Web Apps, Vue.Js and Azure SQL'
 urlFragment: azure-sql-db-graphql-hasura
 ---
